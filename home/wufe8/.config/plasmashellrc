@@ -1,0 +1,85 @@
+[DownloadDialog Settings]
+DP-2 HDMI-0 Height 1080=418
+DP-2 HDMI-0 Width 1920=700
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_applications:org.kde.yakuake.desktop
+
+[PlasmaTransientsConfig]
+PreloadWeight=92
+
+[PlasmaViews][Panel 1][Defaults]
+thickness=57
+
+[PlasmaViews][Panel 1][Horizontal1024]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1152]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1200]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1280]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1366]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1440]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1600]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1680]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1900]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1916]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1920]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal2048]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal800]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal864]
+thickness=45
+
+[PlasmaViews][Panel 1][Vertical1080]
+thickness=57
+
+[PlasmaViews][Panel 109][Defaults]
+thickness=57
+
+[PlasmaViews][Panel 109][Horizontal1920]
+thickness=39
+
+[PlasmaViews][Panel 109][Vertical1080]
+thickness=57
+
+[PlasmaViews][Panel 22][Defaults]
+thickness=46
+
+[PlasmaViews][Panel 22][Horizontal1920]
+thickness=46
+
+[PlasmaViews][Panel 46][Defaults]
+thickness=39
+
+[PlasmaViews][Panel 46][Horizontal1920]
+thickness=39
+
+[ScreenConnectors]
+0=DP-2
+1=HDMI-0
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js

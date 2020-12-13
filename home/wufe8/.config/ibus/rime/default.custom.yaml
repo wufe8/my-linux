@@ -1,0 +1,16 @@
+patch:
+  switches/@0/reset: 1  #默认英文输入，需要中文时再切换
+  punctuator/import_preset: alternative #全套使用ASCII标点
+  switcher/hotkeys:  # 這個列表裏每項定義一個快捷鍵，使哪個都中
+    - "Shift+Space"
+    - "Control+grave"
+    - F4
+  style/horizontal: true
+  ascii_composer:
+      good_old_caps_lock: true
+      switch_key:
+      Caps_Lock: noop
+      Shift_L: noop
+      Shift_R: commit_code
+      Control_L: noop
+      Control_R: noop

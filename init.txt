@@ -1,0 +1,55 @@
+# debain系包管理器
+sudo apt install
+
+# arch系包管理器
+sudo pacman -S
+yay -S
+
+###########
+# 常用包  #
+###########
+
+sudo pacman -S vim neovim code python2 python3 nodejs npm git gcc gdb cmake ctags jdk8-openjdk ibus ibus-rime xclip neofetch ffmpeg mplayer thefuck ranger yay vlc gpart gparted wine base-devel
+
+base-devel #arch basic pack
+
+# 编辑器
+vim neovim code
+
+# 编程环境
+python2 python3 pip
+nodejs npm
+git
+gcc g++ gdb cmake ctags
+jdk8-openjdk openjdk-8-jdkAfc
+
+# 输入法
+ibus ibus-rime
+
+# 终端
+fbterm #tty下支持utf-8的终端
+xclip #支持vim与系统剪切板间的交互
+neofetch screenfetch #输出系统信息
+ffmpeg mplayer #多媒体工具
+wqy-bitmapfont wqy-zenhei #解决xfce4-terminal字体间距过大的问题
+thefuck ranger
+yay
+
+# 软件
+google-chrome deepin-wine-tim vlc
+gpart gparted
+
+# windows软件
+wine
+
+# 解决wine无法使用输入法https://blog.csdn.net/zlucifer/article/details/79468686
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus  
+export XMODIFIERS="@im=ibus" 
+gsettings set org.gnome.settings-daemon.plugins.keyboard active false
+
+# 解决开机黑屏一定时间的问题
+sudo echo "TimeoutStartSec=2sec" >> /etc/systemd/system/network-online.target.wants/networking.service
+
+# manjaro硬盘挂载点兼容
+sudo ln -s /run/media /media
