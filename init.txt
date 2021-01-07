@@ -5,42 +5,55 @@ sudo apt install
 sudo pacman -S
 yay -S
 
-###########
-# 常用包  #
-###########
+##########
+# 常用包 #
+##########
 
-sudo pacman -S vim neovim code python2 python3 nodejs npm git gcc gdb cmake ctags jdk8-openjdk ibus ibus-rime xclip neofetch ffmpeg mplayer thefuck ranger yay vlc gpart gparted wine base-devel
+base-devel                       # arch基础常用包
+yay                              # 自动查找aur的辅助包管理器
 
-base-devel #arch basic pack
+vim neovim code                  # 编辑器
+git                              # 版本管理
+python2 python3 nodejs npm       # 解释型语言环境
+gcc gdb cmake ctags jdk8-openjdk # 编译型语言环境
+arm-none-eabi-gcc arm-none-eabi-newlib \
+libopencm3 stlink                # STM32支持
 
-# 编辑器
-vim neovim code
+ibus ibus-rime                   # 输入法
+xf86-input-wacom                 # 数位板
+xclip                            # 支持vim与系统剪切板间的交互
+screenfetch neofetch             # 输出系统信息
 
-# 编程环境
-python2 python3 pip
-nodejs npm
-git
-gcc g++ gdb cmake ctags
-jdk8-openjdk openjdk-8-jdkAfc
+thefuck                          # 智能shell命令修正
+ranger                           # 仿vim操作的终端文件管理器
+wqy-bitmapfont wqy-zenhei        # 解决xfce4-terminal字体间距过大的问题
+ffmpeg mplayer vlc               # 多媒体软件
+xorg-xev                         # 按键事件管理
+fbterm                           # tty下支持utf-8的终端
+htop                             # 增强版top 终端下的资源管理器
+screenkey                        # 屏幕实时显示按键 演示用
 
-# 输入法
-ibus ibus-rime
+gpart gparted mtools             # GUI硬盘调整工具 及其相关依赖
+arandr                           # gui版xrandr
 
-# 终端
-fbterm #tty下支持utf-8的终端
-xclip #支持vim与系统剪切板间的交互
-neofetch screenfetch #输出系统信息
-ffmpeg mplayer #多媒体工具
-wqy-bitmapfont wqy-zenhei #解决xfce4-terminal字体间距过大的问题
-thefuck ranger
-yay
+wine                             # windows应用翻译器
 
-# 软件
-google-chrome deepin-wine-tim vlc
-gpart gparted
+i3                               # i3窗口管理器
+dmenu                            # 快速启动软件
+xcompmgr                         # 透明窗口支持
+unclutter                        # 闲置一定时间隐藏光标
 
-# windows软件
-wine
+feh                              # 简易图片查看器 兼壁纸设置工具
+spectacle                        # kde的截图工具
+dolphin                          # kde的文件管理器
+google-chrome                    # 网页浏览器
+deepin-wine-tim                  # Tim聊天软件 deepin-wine移植
+obs                              # obs多媒体推流 录像软件
+volumeicon                       # 状态栏添加音量调节按钮
+
+############
+# 问题解决 #
+############
 
 # 解决wine无法使用输入法https://blog.csdn.net/zlucifer/article/details/79468686
 export GTK_IM_MODULE=ibus
