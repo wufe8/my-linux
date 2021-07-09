@@ -49,6 +49,12 @@ dolphin                          # kde的文件管理器
 google-chrome                    # 网页浏览器
 deepin-wine-tim                  # Tim聊天软件 deepin-wine移植
 obs                              # obs多媒体推流 录像软件
+
+networkmanager                   # 网络管理器
+nm-connection-editor             # gui网络管理器
+nm-applet                        # 状态栏添加网络
+
+acpilight                        # 调节屏幕显示亮度 xbacklight
 volumeicon                       # 状态栏添加音量调节按钮
 
 ############

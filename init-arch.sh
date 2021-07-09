@@ -9,8 +9,13 @@ sudo pacman -S ranger wqy-bitmapfont wqy-zenhei ffmpeg mplayer vlc xorg-xev fbte
 sudo pacman -S gpart gparted mtools arandr
 sudo pacman -S wine
 sudo pacman -S i3 dmenu xcompmgr unclutter
-sudo pacman -S feh spectacle dolphin google-chrome deepin-wine-tim obs volumeicon
-sudo pacman -S networkmanager nm-controller-gui
+sudo pacman -S deepin-wine-tim obs
+sudo pacman -S feh spectacle dolphin volumeicon
+sudo pacman -S networkmanager
+sudo pacman -S nm-controller-gui
+sudo pacman -S nm-connection-editor
+sudo pacman -S nm-applet
+sudo pacman -S network-manager-applet
 
+sudo pacman -S google-chrome
 yay -S google-chrome
-echo [WRONG] if using KDE, DON\'T change default exporler into chrome!!!

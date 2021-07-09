@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -20,7 +20,7 @@ font pango:monospace 10
 #font pango:DejaVu Sans Mono 8
 
 # 项目名                 边框     背景    文字  指示器     子边框
-client.focused          #ff66cb #ff66cb #FFFFFF #DDDDDD   #5294E2
+client.focused          #d8b4ff #d8b4ff #FFFFFF #DDDDDD   #5294E2
 client.focused_inactive #2F343F #2F343F #86888C #292D2E   #5A5A5A
 client.unfocused        #2F343F #2F343F #86888C #292D2E   #5A5A5A
 client.urgent           #D64E4E #D64E4E #FFFFFF #D64E4E   #D64E4E
@@ -56,6 +56,10 @@ exec --no-startup-id nm-applet
 bindsym XF86AudioRaiseVolume exec amixer set Master playback 1310+  
 bindsym XF86AudioLowerVolume exec amixer set Master playback 1310-  
 bindsym XF86AudioMute exec amixer set Master toggle 
+
+# control brightness
+bindsym XF86MonBrightnessUp exec xbacklight -A 5
+bindsym XF86MonBrightnessDown exec xbacklight -U 5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -226,8 +230,7 @@ bindsym $mod+p exec spectacle
 exec_always exec xcompmgr
 
 # set desktop background
-exec feh --bg-scale ~/Picture/69586406_p0\(4x\).png ~/Picture/4ae8bb7077e482120a06f0c6cad89cf3e35fc156\(4x\).jpg
-
+exec feh --bg-scale /home/karumi/图片/wallpaper/壁纸1.png
 # auto hide cursor when idle a few second
 exec unclutter -idle 2
 
